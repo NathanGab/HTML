@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.filtered-image {
+    mix-blend-mode: hard-light;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.game {
+    width: 750px;
+    height: 200px;
+    border: 1px solid white;
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: absolute; /* Mudado de relative para absolute */
+    bottom: 0; /* Para ficar fixo na parte inferior do container */
+}
+
+.animate {
+    animation: jump 0.7s linear;
+}
+
+@keyframes jump {
+    0% { bottom: 0; }
+    30% { bottom: 50px; }
+    50% { bottom: 70px; }
+    70% { bottom: 50px; }
+    100% { bottom: 0; }
+}
+
+
+#block, #block2, #block3 {
+    position: absolute; /* Mudado de relative para absolute */
+    bottom: 0; /* Para alinhamento na parte inferior */
+}
+
+#block {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    left: 500px;
+    animation: block 3s infinite linear;
+}
+
+#block2 {
+    background-color: rgb(0, 255, 34);
+    width: 20px;
+    height: 30px;
+    left: 900px;
+    animation: block 5s infinite linear;
+}
+
+#block3 {
+    background-color: rgb(98, 0, 255);
+    width: 30px;
+    height: 20px;
+    left: 1000px;
+    animation: block 10s infinite linear;
+}
+
+@keyframes block {
+    0% { left: 750px; }
+    100% { left: -20px; }
+}
+
+p {
+    text-align: center;
+    color: #0af7ff;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#botaopause {
+    background-color: #4CAF50; /* Verde padrão do Material Design */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute; /* Adicionado para posicionamento */
+    top: 350px; /* Ajuste de acordo com a posição desejada */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
+#botaopause:hover {
+    background-color: #3e8e41; /* Verde mais escuro */
+}
