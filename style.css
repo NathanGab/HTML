@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1e29;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.blog-post {
+    text-align: center;
+}
+
+.blog-post h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.post-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.blog-post p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+body {
+    background-image: url('https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt4aeb3fbf95ab4829/650f0c45de320119b648ba88/warframe.jpg');
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
