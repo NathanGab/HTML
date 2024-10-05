@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: border-box;
+    border-radius: 2rem;
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    display: flex;
+    /* Make the form a flex container */
+    flex-direction: column;
+    /** Organizar ítens verticalmente */
+    align-items: center;
+    justify-content: space-between;
+    /** Espaceamento vertical entre os ítens. */
+}
+
+.form input {
+    border: border-box;
+    border-color: black;
+    width: 80%;
+    height: 5%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form button {
+    margin: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+.form h1 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form p {
+    text-align: justify;
+}
+
+.form button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.notify {
+   
+}
+
+.table {}
+
+.table table {}
+
+.table table td {}
+
+.table table td button {}
+
+.del_btn {
+    margin: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+.up_btn {
+    margin: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+.table table td button:hover {}
+
+#notify {
+
+}
+
+.update_data {
+
+}
+
+.show {
+   
+}
+
+.hide {
+    
+}
